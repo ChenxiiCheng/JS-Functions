@@ -1,6 +1,10 @@
-// Object.prototype.toString({})  => '[object Object]'
-// Object.prototype.toString([])  => '[object Array]'
-
+/**
+ * ES5 Deep clone
+ * @param {object} origin
+ * @param {object || undefined} target
+ * Object.prototype.toString({})  => '[object Object]'
+ * Object.prototype.toString([])  => '[object Array]'
+ */
 function deepClone(origin, target) {
   const tar = target || {};
   const toStr = Object.prototype.toString;
